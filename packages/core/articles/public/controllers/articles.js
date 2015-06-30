@@ -47,7 +47,7 @@ angular.module('mean.articles').controller('ArticlesController', ['$scope', '$st
         var article = $scope.article;
         if(!article.updated) {
           article.updated = [];
-	}
+	      }
         article.updated.push(new Date().getTime());
 
         article.$update(function() {
